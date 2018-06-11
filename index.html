@@ -300,9 +300,14 @@
       
         
           
-            <p>今天终于搞定了termux下vim中文乱码的情况<br>-用下面这个命令进入vim配置文件</p>
+            <p>今天终于搞定了termux下vim中文乱码的情况</p>
+<ul>
+<li>用下面这个命令进入vim配置文件</li>
+</ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.vimrc</span><br></pre></td></tr></table></figure>
-<p>-加上一下这几行参数</p>
+<ul>
+<li>加上一下这几行参数</li>
+</ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936</span><br><span class="line"><span class="built_in">set</span> termencoding=utf-8</span><br><span class="line"><span class="built_in">set</span> encoding=utf-8</span><br></pre></td></tr></table></figure>
 <p>保存退出就搞定了</p>
 <hr>
